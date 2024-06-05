@@ -1,38 +1,86 @@
 .App {
   text-align: center;
+  margin-top: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading {
+  font-size: 2em;
+  margin: 20px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search {
+  padding: 10px;
+  font-size: 1em;
+  width: 300px;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.books {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.book {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
+}
+
+.bookStyle {
+  margin: 5px 0;
+}
+
+.titles {
+  font-weight: bold;
+}
+
+.titleContent {
+  margin: 0;
+}
+
+.addToBookShelf,
+.removeFromBookshelf {
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.addToBookShelf {
+  background-color: #4CAF50;
   color: white;
+  border: none;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.removeFromBookshelf {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav {
+  margin-bottom: 20px;
+}
+
+.navButton {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.navButtonStyle {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navButtonStyle:hover {
+  background-color: #0056b3;
 }
